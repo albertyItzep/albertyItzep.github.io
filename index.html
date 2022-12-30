@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <section id="login" style="display: block;">
+        <div class="container d-flex justify-content-center">
+            <div class="card mt-2" style="width: 30rem;">
+                <div class="card-header text-center h3">
+                  Login
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">User Name</label>
+                          <input id="userName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div  class="form-text">Insert your User Name</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="pass">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="adminV">
+                          <label class="form-check-label" for="exampleCheck1">Administrator</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="login()">Submit</button>
+                    </form>
+                    <button class="btn btn-link" onclick="irRegistro()">Register</button>
+                </div>
+              </div>
+          </div>
+    </section>
+    <section id="register" style="display: none;">
+      <div id="register" class="d-flex justify-content-center mt-2 " style="display: none;">
+        <div class="card mt-2" style="width: 30rem;">
+            <div class="card-header text-center h3">
+              Registrarse
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">User Name</label>
+                      <input id="userNameR" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div  class="form-text">Insert your User Name</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                        <input id="fullName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="form-text">Insert your Full Name</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">DPI</label>
+                        <input id="dpi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div  class="form-text">Insert your personal document for identity</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                        <input id="phone" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div  class="form-text">Insert your phone Number</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Email1" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="Email1" aria-describedby="emailHelp">
+                      <div  class="form-text">Insert your Email</div>
+                    </div>
+                    <div class="mb-3">
+                      <label id="passR" for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="registrarCliente()">Submit</button>
+                    <button class="btn btn-link" onclick="irLoginRegistro()">Regresar</button>
+                </form>
+            </div>
+          </div>
+    </div>
+    </section>
+    <section id="adminDashboard" style="display: none;">
+      <div class="container-fluid">
+        <div style="display: flex;justify-content: end;">
+          <button class="btn btn-danger me-2 mt-2" onclick="SalirAdmin()">Salir</button>
+          <button class="btn btn-dark me-2 mt-2" onclick="irBlockchain()">Blockchain</button>
+        </div>
+        <div style="display: flex;justify-content:center; margin: 2rem;padding: 1rem;">
+          <div class="card">
+            <h5 class="card-header">Carga Masiva de Archivos</h5>
+            <div class="card-body">
+              <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="border border-top-0 ms-1 text-center">
+                    <label for="PeliculasInputFile" class="ms-2 mb-2 border-bottom border-dark">Peliculas</label>
+                    <input type="file" name="" id="PeliculasInputFile" class="ms-2 mb-2">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="border border-top-0 ms-1 text-center ">
+                    <label for="clientesFileInput" class="ms-2 mb-2 border-bottom border-dark">Clientes</label>
+                    <input type="file" name="" id="clientesFileInput" class="ms-2 mb-2">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="border border-top-0 ms-1 text-center">
+                    <label for="actoresFileInput" class="ms-2 mb-2 border-bottom border-dark">Actores icónicos</label>
+                    <input type="file" name="" id="actoresFileInput" class="ms-2 mb-2">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="border border-top-0 ms-1 text-center">
+                    <label for="categoriasFileInput" class="ms-2 mb-2 border-bottom border-dark">Categorías</label>
+                    <input type="file" name="" id="categoriasFileInput" class="ms-2 mb-2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+      <div class="container-full">
+        <div style="display: flex;justify-content:center;">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <!-- parte de botones para visualizar-->
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><button class="btn btn-primary" onclick="graficarPeliculas()">Peliculas</button></li>
+                    <li class="list-group-item"><button class="btn btn-secondary" onclick="graficarClientes()">Clientes</button></li>
+                    <li class="list-group-item"><button class="btn btn-info" onclick="graficarActores()">Actores icónicos</button></li>
+                    <li class="list-group-item"><button class="btn btn-success" onclick="graficarCategorias()">Categorías</button></li>
+                    <li class="list-group-item"><button class="btn btn-dark" id="descargarEnImagen">Descargar PNG</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="card">
+                <div class="card-body">
+                  <div style="overflow-x: auto;overflow-y: auto;">
+                    <div id="insertGraphAdmin" style="width: 65rem;height: 20rem;">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blockchain" style="display: none;">
+      <div style="display: flex;justify-content: end;">
+        <button class="btn btn-danger mt-3 me-3" onclick="salirBlockchain()">Salir de BlockChain</button>
+      </div>
+      <div id="botones BlockChain">
+        <div class="container-fluid">
+          <div class="card mt-3">
+            <div class="card-body h3">
+              <div class="input-group" style="width: 50rem;">
+                <input type="number" name="" id="" class="form-control">
+                <button class="btn btn-info ms-1">Modificar Tiempo</button>
+                <button class="btn btn-success ms-1" onclick="generarBloque()">Generar Bloque</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="insertarGrapMerkle">
+      </div>
+      <style>
+        #global1 {
+          height: 26rem;
+          width: 75rem;
+          border: 1px solid #ddd;
+          background: #f1f1f1;
+          display: flex;
+          flex-direction: row;
+          overflow-x: auto;
+        }
+        #mensajes1 {
+          min-width:18rem;
+          height: 24rem;
+          display: flex;
+          margin: 1rem;
+          flex-direction: row;
+        }
+      </style>
+      <div id="insertarBloques">
+        <div class="mt-4"style="display: flex;justify-content:center;flex-direction: row;">
+            <div class="border" id="global1">
+
+            </div>  
+            </div>
+        </div>
+      </div>
+      <div id="insertarMerkle"></div>
+    </section>
+    <section id="normalDashboard" style="display: none;">
+      <div id="navBar">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" onclick="irPeliculas()">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="irActores()">Actores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="irHash()">Categorias</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Bienvenido Usuario
+              </span>
+              <span class="navbar-text ms-3">
+                <a href="#" onclick="salirNormal()">Salir</a>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="dashboardPeliculas" style="display: none;">
+        <div class="mt-3 ms-3 mb-3">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ordenar por orden
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="cargarViewPeliculasLR()">Ascendente </a></li>
+              <li><a class="dropdown-item" href="#" onclick="cargarViewPeliculasRL()">Descendente</a></li>
+            </ul>
+          </div>
+          <div id="tablaPeliculas" class="container mt-3">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Titulo</th>
+                    <th>Descripción</th>
+                    <th>Opciones</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody id="tablaPeliculasBody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ActoresIn" style="display: none;">
+        <div class="card mt-3">
+          <div class="card-body text-center">
+            Actores Iconicos
+          </div>
+          <div class="dropdown mb-3 ms-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ordenar en forma
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#" onclick="cargarActoresView()">Pre-Orden</a></li>
+              <li><a class="dropdown-item" href="#" onclick="cargaActoresInOrden()">Inorden</a></li>
+              <li><a class="dropdown-item" href="#" onclick="cargaActoresPostOrden()">Pos-Orden</a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: flex;justify-content:center; margin: 1rem;">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="table-dark">
+                <tr>
+                  <th>Actor</th>
+                  <th>Descripcion</th>
+                </tr>
+              </thead>
+              <tbody id="tablaActoresH">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="CategoriasIn" style="display: none;">
+        <div class="card mt-3">
+          <div class="card-body text-center h3">
+            Categorias
+          </div>
+        </div>
+        <div style="display: flex;justify-content:center; margin: 4rem;">
+          <div id="tablaHashInsert" class="row row-cols-1 row-cols-md-2 g-4">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion de Modals -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 " id="tituloPeliculaIn"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Descripción</label>
+                <label class="form-control" id="DescripciónPeliculaIn" aria-describedby="emailHelp"></label>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Puntuación Pelicula</label>
+                <input type="number" class="form-control" id="PuntuaciónPeliculaIn">
+              </div>
+              <button type="button" class="btn btn-primary" id="GuardarDatosPeliculaIn" onclick="guardarModPelicula()">Guardar</button>
+              <button type="button" class="btn btn-success" id="AlquilarPeliculaIn" onclick="alquilarPelicula()">Alquilar</button>
+              <div class="mb-3">
+                <label class="form-control mt-2">Cometarios</label>
+                <div style="overflow-x: auto; height: 5rem;" class="form-control mt-2" id="comentariosIn">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label mt-1 h6">Ingresar Comentario</label>
+                  <div class="mt-2">
+                    <textarea class="form-control" placeholder="Ingresar Comentario" id="ingresoComentarioIn"></textarea>
+                    <button type="button" class="btn btn-dark ms-2 mt-2" id="publicarComentarioIn" onclick="guardarComentario()">Publicar</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>   
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://superal.github.io/canvas2image/canvas2image.js "></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="./js/sha256.js"></script>
+    <script src="./js/TablaHash.js"></script>
+    <script src="./js/ArbolAVL.js"></script>
+    <script src=".//js/Merkle.js"></script>
+    <script src="./js/BlockChain.js"></script>
+    <script src="./js/ArbolBinario.js"></script>
+    <script src="./js/ListaSimple.js"></script>
+    <script src="./js/controlador.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

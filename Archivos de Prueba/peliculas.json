@@ -1,0 +1,137 @@
+[
+    {
+      "id_pelicula": 1785865534047,
+      "nombre_pelicula": "Tara Cooley",
+      "descripcion": "Elit qui do nostrud qui minim enim ea. Ea nostrud voluptate reprehenderit elit proident proident. Aliqua Lorem ullamco adipisicing velit nisi magna et.\r\n",
+      "puntuacion_star": 2,
+      "precio_Q": 66,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 5911989416409,
+      "nombre_pelicula": "Rocha Bryant",
+      "descripcion": "Sit exercitation ex fugiat quis aute et elit excepteur do nisi qui non. Veniam ad incididunt excepteur sunt. Eu irure deserunt sit reprehenderit dolor in nisi mollit excepteur amet amet irure reprehenderit. Dolor nisi Lorem sint mollit ex duis incididunt sit incididunt fugiat ex aute ad deserunt. Reprehenderit veniam excepteur ullamco fugiat consectetur elit labore nostrud sunt amet. Nulla in ullamco ullamco laboris ullamco dolore laboris.\r\n",
+      "puntuacion_star": 2,
+      "precio_Q": 122,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 6556666538717,
+      "nombre_pelicula": "Walls Burris",
+      "descripcion": "Irure Lorem commodo ad est incididunt. Ut eu ullamco commodo fugiat. Culpa duis aliqua est dolore adipisicing commodo eu.\r\n",
+      "puntuacion_star": 1,
+      "precio_Q": 93,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 7234003922193,
+      "nombre_pelicula": "Oconnor Palmer",
+      "descripcion": "Sunt aliqua nostrud minim qui in aliqua aliqua. Et laboris sint officia consectetur incididunt consectetur. Eu sit non ad laboris adipisicing laboris ipsum cillum elit culpa dolor minim. Velit ad amet tempor adipisicing tempor nostrud sit incididunt. Id culpa est et proident mollit dolor nulla incididunt minim officia aliquip voluptate ullamco. Sit nisi dolor amet Lorem excepteur ipsum eu.\r\n",
+      "puntuacion_star": 5,
+      "precio_Q": 56,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 2083524375477,
+      "nombre_pelicula": "Mcleod York",
+      "descripcion": "Adipisicing in duis consequat mollit et aliqua ut quis cupidatat. Adipisicing mollit do voluptate esse occaecat laborum. Cupidatat ad anim in qui fugiat nulla voluptate. Reprehenderit consequat tempor adipisicing nostrud.\r\n",
+      "puntuacion_star": 1,
+      "precio_Q": 240,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 9833425323037,
+      "nombre_pelicula": "Mccall Mccoy",
+      "descripcion": "Labore laboris sint elit qui nostrud do. Anim sint consequat sint laborum duis dolore nulla in commodo incididunt ad et deserunt qui. Ex commodo reprehenderit qui minim minim aliquip mollit magna aliqua cupidatat sunt nostrud mollit.\r\n",
+      "puntuacion_star": 0,
+      "precio_Q": 78,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 6456106378318,
+      "nombre_pelicula": "Angie Alford",
+      "descripcion": "Esse ad reprehenderit qui non. Cupidatat ex qui commodo amet enim. Proident velit ea id eu cillum eiusmod ea eu nostrud. Quis irure do cupidatat voluptate qui quis aute ad in eu incididunt dolor elit sint. Quis labore occaecat ad duis eiusmod exercitation ea officia eu labore eiusmod minim eiusmod. Eiusmod est est deserunt mollit est ipsum quis ipsum laboris ipsum.\r\n",
+      "puntuacion_star": 3,
+      "precio_Q": 135,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 1807852273567,
+      "nombre_pelicula": "Stuart Rogers",
+      "descripcion": "Labore fugiat labore fugiat cillum dolor sint laboris duis. Excepteur aute quis reprehenderit excepteur. Nostrud incididunt qui dolore qui ex quis ipsum culpa. Duis duis consectetur tempor veniam commodo dolor sint ipsum. Consectetur nulla laboris mollit sint cillum anim anim esse velit ullamco nisi ipsum veniam adipisicing. Tempor sit elit reprehenderit laborum cupidatat dolor ullamco enim cillum velit irure nostrud aliqua.\r\n",
+      "puntuacion_star": 3,
+      "precio_Q": 152,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 3377513707599,
+      "nombre_pelicula": "Petersen Gentry",
+      "descripcion": "Excepteur in excepteur aliquip nisi labore laboris sint irure fugiat tempor reprehenderit est Lorem. Id labore exercitation sint adipisicing ipsum sit. Amet occaecat nisi ut elit voluptate sint fugiat aliqua irure esse. Sint pariatur cillum proident amet Lorem non ea. Aliqua sunt in ullamco commodo laboris exercitation sunt. Non enim quis velit exercitation voluptate aliquip minim amet anim nostrud nostrud ex nisi adipisicing. Sint laboris Lorem aute id exercitation quis sunt culpa.\r\n",
+      "puntuacion_star": 3,
+      "precio_Q": 212,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 1059706333876,
+      "nombre_pelicula": "Melba Simpson",
+      "descripcion": "Nulla aliqua laborum voluptate ullamco officia tempor. Est dolor nulla tempor ut velit pariatur adipisicing ullamco ipsum incididunt proident ut do. Aute minim magna qui quis. Id amet incididunt ex aliquip quis voluptate fugiat. Anim duis elit non fugiat mollit.\r\n",
+      "puntuacion_star": 3,
+      "precio_Q": 197,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 6059242389901,
+      "nombre_pelicula": "Susana Savage",
+      "descripcion": "Enim veniam occaecat cupidatat ut et eiusmod tempor ut exercitation. Nostrud anim deserunt et elit consequat. Occaecat commodo elit tempor eiusmod enim laboris culpa magna. Quis nisi velit cillum aliquip incididunt culpa esse dolor.\r\n",
+      "puntuacion_star": 2,
+      "precio_Q": 223,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 7018352391377,
+      "nombre_pelicula": "Wilda Adkins",
+      "descripcion": "Amet eu amet commodo tempor fugiat anim aute cupidatat irure sint laborum commodo. Nisi nisi consectetur officia enim tempor nulla labore duis laboris. Deserunt cillum mollit nostrud in pariatur amet laboris consequat nulla. Enim cillum consectetur consequat consequat amet mollit amet quis do ad cupidatat culpa cillum. Et pariatur commodo non elit dolor dolore labore ex magna nisi aliqua aliqua. Cupidatat exercitation tempor deserunt ex.\r\n",
+      "puntuacion_star": 3,
+      "precio_Q": 198,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 4088137115218,
+      "nombre_pelicula": "Church Dillon",
+      "descripcion": "Commodo consectetur ad consectetur enim officia fugiat. Eu ad magna reprehenderit pariatur sint ullamco amet esse officia sit nisi id nostrud. Magna velit ad id cillum adipisicing consectetur irure irure ut excepteur aute do ut. Aliquip cupidatat occaecat dolor occaecat sunt dolor et esse ullamco incididunt exercitation eiusmod excepteur nisi. Qui ex pariatur mollit consectetur quis voluptate anim eu nisi. Anim deserunt nostrud dolor amet.\r\n",
+      "puntuacion_star": 1,
+      "precio_Q": 89,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 5879734914078,
+      "nombre_pelicula": "Cherry Peck",
+      "descripcion": "Ex cupidatat pariatur occaecat ad aute commodo cupidatat. Voluptate reprehenderit non incididunt elit in sit elit voluptate. Aliquip id incididunt enim non reprehenderit id est veniam tempor consequat aliquip ullamco. Magna sint duis sit ullamco fugiat. Qui sunt exercitation ut ex pariatur nostrud nulla sit exercitation magna.\r\n",
+      "puntuacion_star": 4,
+      "precio_Q": 182,
+      "paginas":170,
+      "categorias":"Thriller"
+    },
+    {
+      "id_pelicula": 7667255758134,
+      "nombre_pelicula": "Bauer Rodriquez",
+      "descripcion": "Cupidatat mollit ea commodo pariatur ex. Quis excepteur et sunt enim fugiat. Officia adipisicing elit dolor do enim dolor tempor nisi.\r\n",
+      "puntuacion_star": 1,
+      "precio_Q": 170,
+      "paginas":170,
+      "categorias":"Thriller"
+    }
+  ]
